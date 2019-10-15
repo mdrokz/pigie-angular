@@ -10,7 +10,11 @@ export class HttpserviceService {
   constructor(private http: HttpClient) {
 
   }
-  public addUser(data: any) {
+  addUser(data: any) {
     return this.http.post(environment.apiURL + 'register', data);
+  }
+
+  checkUser(data: any) {
+    return this.http.post(environment.apiURL + 'login', data);
   }
 }

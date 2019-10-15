@@ -13,7 +13,7 @@ export class RegisterComponent implements OnInit {
   addUser() {
     debugger;
     this.http.addUser(this.user).subscribe(res => {
-      debugger;
+
       console.log(res);
     });
   }
